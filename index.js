@@ -11,6 +11,12 @@ const app = express(); // Initialising express app
 app.use(express.json()); // Utilising express.json() method
 
 database();
+
+// For welcome message
+app.get('/', (req, res) => {
+    res.status(200).send("Welcome to Hall Booking app!!!");
+})
+
         
 // For task-1
 app.use('/api', roomsRouter);
