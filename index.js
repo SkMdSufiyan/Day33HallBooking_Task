@@ -14,7 +14,7 @@ database();
 
 // For welcome message
 app.get('/', (req, res) => {
-    res.status(200).send("Welcome to Hall Booking app!!!");
+    res.status(200).send("Welcome to Hall Booking app!!! rommName-1---to---roomName-8 are alreay created in the database.");
 })
 
         
