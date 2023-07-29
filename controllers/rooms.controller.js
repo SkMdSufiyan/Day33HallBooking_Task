@@ -16,7 +16,7 @@ exports.createRoom = async (req, res) => {
         }
 
         // If the roomName is not existing------then create a new room
-        const newRoom = roomsModel(payload);
+        const newRoom = new roomsModel(payload);
 
         // Creating room
         await newRoom.save()
