@@ -120,7 +120,7 @@ exports.getCustomersBookedData = async (req, res) => {
             let customersList = [];
             let customersBookedDat = [];
             
-            for(doc of result){
+            for(let doc of result){
                 if(!customersList.includes(doc.customerName)){
                     const newDat = {
                                     "customerName" : doc.customerName,
@@ -175,7 +175,7 @@ exports.getHowManyTimesCustomerBooked = async (req, res) => {
             let customersList = [];
             let customersBookedDat = [];
             
-            for(doc of result){
+            for(let doc of result){
                 if(!customersList.includes(doc.customerName)){
                     const newDat = {
                                     "customerName" : doc.customerName,
