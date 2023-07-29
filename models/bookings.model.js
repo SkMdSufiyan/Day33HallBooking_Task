@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // Creating booking schema
-const bookingSchema = mongoose.Schema({
+const bookingSchema = new mongoose.Schema({
     customerName : {
         type : String,
         required : true,
